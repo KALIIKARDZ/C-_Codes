@@ -50,3 +50,19 @@ class Output
 
     }
 }
+// Math class
+using System;
+class Sphere
+{
+    static void Main()
+    {
+        int radius;
+        double volume, surfaceArea;
+        Console.WriteLine("Enter the radius of a sphere");
+        radius = int.Parse(Console.ReadLine());
+        volume = 4.0 / 3.0 * Math.PI * Math.Pow(radius, 3);
+        surfaceArea = 4 * Math.PI * Math.Pow(radius, 2);
+        Console.WriteLine("Volume: {0} \t Suface area: {1}",
+        volume, surfaceArea);
+    }
+}
